@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wildlife sanctuary</title>
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+
+            <div class="left-side">
+
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="nav-link-wrapper">
+                    <a href="https://www.dolphinproject.com">Dolphin Project</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="https://whalesanctuaryproject.org">Whale sanctuary</a>
+                </div>
+                <div>ELENA PANAYOTOVA</div>
+            </div>
+        </div>
+</div>
+
+<div class="content-wrapper">
+    <div class="portfolio-items-wrapper">
+        <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(Images_homework/Orca2.jpg)"></div>
+            <div class="img-text-wrapper">
+                <div class="subtitle"> Wild and free. Killer whale environment.</div>                   
+            </div>
+        </div>
+        <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(Images_homework/Captivity.jpg)"></div>
+            <div class="img-text-wrapper">
+                <div class="subtitle">Killer whales don't belong in captivity.</div>                   
+            </div>
+        </div>
+        <div class="portfolio-item-wrapper"> 
+            <div class="portfolio-img-background" style="background-image:url('Images_homework/Killer Whale Project.jpg')"></div>
+            <div class="img-text-wrapper">
+                <div class="subtitle">There is another way! Here it is! Whale sanctuary.</div>                   
+            </div>
+        </div>
+        <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(Images_homework/Dolphin2.jpg)"></div>
+            <div class="img-text-wrapper">
+                <div class="subtitle">Wild and free. Dolphin environment.</div>                   
+            </div>
+        </div>
+        <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(Images_homework/Dolphinarium.jpg)"></div>
+            <div class="img-text-wrapper">
+                <div class="subtitle">Dolhins don't belong in captivity.</div>                   
+            </div>
+        </div>
+        <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url('Images_homework/Dolphin Project.jpg')"></div>
+
+            <div class="img-text-wrapper">
+                <div class="subtitle">There is another way! Here it is! Dolhin project.</div>                   
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+    portfolioItems.forEach(portfolioItem => {
+
+        portfolioItem.addEventListener('mouseover', () => {
+            var el = portfolioItem.querySelector('.portfolio-img-background');
+            el.classList.add('img-darken');
+        });
+
+        portfolioItem.addEventListener('mouseout', () => {
+            var el = portfolioItem.querySelector('.portfolio-img-background');
+            el.classList.remove('img-darken');
+        });
+    });
+</script>
+</html>
